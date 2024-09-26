@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    height: 100vh;
+    overflow-x: hidden;
+    background: #333;
+    color: #222;
+}
+
+.container {
+    background-color: #fafafa;
+    transform-origin: top left;
+    transition: transform 0.5s linear;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 50px;
+}
+
+.container.show-nav{
+    transform: rotate(-20deg);
+}
+
+.circle-container {
+    position: fixed;
+    top: -100px;
+    left: -100px;
+}
+
+.circle {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #ff7979;
+    transition: transform 0.5s linear;
+}
+
+.container.show-nav .circle {
+    transform: rotate(-70deg);
+}
+
+.circle button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    background: transparent;
+    border: 0;
+    font-size: 26px;
+    color: #fff; 
+    cursor: pointer;
+}
+
+.circle button:focus {
+    outline: none;
+}
+
+.circle button#open {
+    left: 60%;
+}
+
+.circle button#close {
+    top: 60%;
+    transform: rotate(90deg);
+    transform-origin: top left;
+}
+
+.content {
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.content small {
+    color: #555;
+    font-style: italic;
+}
+
+.content p {
+    font-size: 1.2rem;
+    line-height: 1.6em;
+}
+
+.content img {
+    max-width: 100%;
+}
+
+.container.show-nav + nav li {
+    transform: translateX(0);
+    transition-delay: 0.3s;
+}
+
+nav {
+    position: fixed;
+    bottom: 40px;
+    left: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 40px;
+}
+
+nav ul li {
+    text-transform: uppercase;
+    color: #fff;
+    margin: 40px 0;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in;
+}
+
+nav ul li i {
+    margin-right: 10px;
+}
+
+nav ul li + li {
+    margin-left: 15px;
+    transform: translateX(-150%);
+}
+
+nav ul li + li + li {
+    margin-left: 30px;
+    transform: translateX(-200%);
+}
