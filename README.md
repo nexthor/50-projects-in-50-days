@@ -6,3 +6,5 @@
 | 02  | [Progress Steps](https://github.com/nexthor/50-projects-in-50-days/tree/main/2-progress-steps)                               | [Live Demo](https://50-projects.nexthor.dev/2-progress-steps/)                |
 | 03  | [Rotating Navigation](https://github.com/nexthor/50-projects-in-50-days/tree/main/3-rotating-navigation)                             | [Live Demo](https://50-projects.nexthor.dev/3-rotating-navigation/)               |
 | 04  | [Hidden Search Widget](https://github.com/nexthor/50-projects-in-50-days/tree/main/4-hidden-search-widget)                             | [Live Demo](https://50-projects.nexthor.dev/4-hidden-search-widget/)               |
+| 05  | [Blurry Loading](https://github.com/nexthor/50-projects-in-50-days/tree/main/5-blurry-loading)                             | [Live Demo](https://50-projects.nexthor.dev/5-blurry-loading/)               |
+| 06  | [Scroll Animation](https://github.com/nexthor/50-projects-in-50-days/tree/main/6-scroll-animation)                             | [Live Demo](https://50-projects.nexthor.dev/6-scroll-animation/)               |
